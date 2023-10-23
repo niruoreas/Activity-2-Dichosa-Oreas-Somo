@@ -80,3 +80,77 @@ header ul li ul li {
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
+
+/* HOME */
+#home{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    height: 100vh;
+    margin: 0;
+    padding: 0 10%;
+    position: relative;
+}
+.hometxt-container {
+    width: 400px;
+    padding: 20px;
+    align-self: center;
+}
+
+.hometxt-container h1 {
+    color: #eda405;
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+.hometxt-container p {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hometxt-container .btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.hometxt-container .start-btn{
+    width: 150px;
+    background: #eda405;
+    color: #1C1E21;
+    font-size: 28px;
+    border: none;
+    border-radius: 50px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.hometxt-container .start-btn:hover {
+    background: none;
+    color: #eda405;
+    transition: all .3s ease;
+}
+
+.custom-shape-divider-bottom-1697703722 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1697703722 svg {
+    position: relative;
+    display: block;
+    width: calc(144% + 1.3px);
+    height: 118px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1697703722 .shape-fill {
+    fill: #eda405;
+}
