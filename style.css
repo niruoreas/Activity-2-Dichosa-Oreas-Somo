@@ -154,3 +154,79 @@ header ul li ul li {
 .custom-shape-divider-bottom-1697703722 .shape-fill {
     fill: #eda405;
 }
+
+/* About */
+
+#about {
+    height: 100vh;
+    margin: 0;
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    position: relative;
+}
+
+.custom-shape-divider-top-1697707958 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1697707958 svg {
+    position: relative;
+    display: block;
+    width: calc(144% + 1.3px);
+    height: 118px;
+}
+
+.custom-shape-divider-top-1697707958 .shape-fill {
+    fill: #eda405;
+}
+
+.benefits-container {
+    width: 700px;
+}
+
+.benefits-container h1{
+    color: #eda405;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.benefits-container p{
+    color: white;
+    font-size: 20px;
+}
+
+.benefits1-list {
+    margin-top: 50px;
+    background: #eda405;
+    color: #060708;
+    width: 340px;
+    padding: 30px;
+    font-weight: 600;
+    border: 2px solid #060708;
+    border-radius: 25px;
+}
+
+.benefits1-list:hover{
+    background: none;
+    color: #eda405;
+    border: 2px solid #eda405;
+    transition: .2s;
+}
+
+.about-pic {
+    height: 500px;
+    width: 400px;
+}
+
+.about-pic img{
+    height: 500px;
+    width: 400px;
+}
