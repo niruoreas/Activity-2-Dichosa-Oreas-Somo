@@ -222,11 +222,121 @@ header ul li ul li {
 }
 
 .about-pic {
-    height: 500px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
+    
 }
 
 .about-pic img{
-    height: 500px;
+    height: 700px;
     width: 400px;
+}
+
+#home .home-bg, #home .home-bg img{
+    height: 100vh;
+    opacity: .5;
+    width: 100%;
+    position: absolute;
+}
+
+#muscle .muscle-bg, #muscle .muscle-bg img {
+    height: 100vh;
+    opacity: .5;
+    width: 100%;
+    position: absolute;
+}
+
+#about .about-bg, #about .about-bg img {
+    height: 100vh;
+    opacity: .5;
+    width: 100%;
+    position: absolute;
+}
+
+.custom-shape-divider-bottom-1697887527 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1697887527 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1697887527 .shape-fill {
+    fill: #eda405;
+    opacity: .5;
+}
+.custom-shape-divider-top-1697888051 {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1697888051 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1697888051 .shape-fill {
+    fill: #eda405;
+    opacity: .5;
+}
+
+.custom-shape-divider-bottom-1697888979 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1697888979 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1697888979 .shape-fill {
+    fill: #eda405;
+    opacity: .5;
+}
+
+.custom-shape-divider-top-1697889050 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1697889050 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1697889050 .shape-fill {
+    fill: #eda405;
+    opacity: .5;
 }
