@@ -1,4 +1,133 @@
-@media (max-width: 414px) {
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    header nav {
+        position: absolute;
+        width: 100%;
+        top: 66px;
+        left: 0;
+        background: #1c1e21;
+        display: none;
+    }
+
+    header.active nav {
+        display: initial;
+    }
+
+    header nav ul li {
+        width: 100%;
+    }
+
+    header nav ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuToggle::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: white;
+        transform: translateY(-12px);
+        box-shadow: 0 12px white;
+    }
+
+    .menuToggle::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: white;
+        transform: translateY(12px);
+    }
+
+    header.active .menuToggle::before {
+        transform: rotate(45deg);
+        box-shadow: 0 0 white;
+    }
+
+    header.active .menuToggle::after {
+        transform: rotate(315deg);
+    }
+
+    #home {
+        flex-direction: row-reverse;
+    }
+
+    #home .homepic img, .hometxt-container{
+        flex-grow: 1;
+    }
+
+    #home .homepic img{
+        height: 500px;
+        width: 250px;
+    }
+    #about {
+        padding: 0 3%;
+    }
+
+    #about .benefits-container {
+        width: 280px;
+        font-size: 1em;
+    }
+    #about .benefits1-list {
+        width: 280px;
+    }
+
+}
+
+@media (max-width: 414px){
+    #home{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20% 10% 40%; 
+        gap: 0;
+    }
+
+    #home .homepic img{
+        height: auto;
+        width: 100%;
+    }
+    .hometxt-container {
+        align-self: center;
+        padding: 0;
+        width: 330px;
+    }
+    #about{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20% 0% 90%;
+        gap: 0;
+    }
+    #about .about-pic img{
+        width: 100%;
+        height: auto;
+    }
+    #about .about-pic{
+        width: 100%;
+        height: auto;
+    }
+
+    #about .benefits-container {
+        width: 100%;
+        font-size: small;
+        padding: 10px;
+    }
+
+    #about .benefits1-list {
+        display: none;
+
     .slide-container .muscle-text {
         font-size: 20px;
     }
@@ -13,5 +142,6 @@
     .m-list-title h2 {
         font-size: 25px;
         padding-top: 120px;
+
     }
 }
