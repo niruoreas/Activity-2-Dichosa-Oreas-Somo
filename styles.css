@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+
+*,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right top, #1c1d1d, #1e2020, #212322, #252623, #292925);
+}
+
+/* Muscles */
+#muscle {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-container {
+    max-width: 1120px;
+    width: 100%;
+    background: none;
+}
+
+.slide-container .muscle-text {
+    text-align: center;
+    color: #eda405;
+    font-size: 35px;
+}
+
+.slide-content {
+    overflow: hidden;
+    border-radius: 25px;
+    margin: 0 40px;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content {
+    position: relative;
+    row-gap: 5pxs;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    padding: 10px 14px;
+    background: #1C1E21;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before, .overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background: #1C1E21;
+}
+
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: white;
+}
+
+.card {
+    border-radius: 25px;
+    background: white;
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #eda405;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.button {
+    border: none;
+    font-size: 16px;
+    color: white;
+    padding: 8px 16px;
+    background-color: #eda405;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.button:hover {
+    background: #333;
+
+}
+
+.swiper-navBtn {
+    color: #eda405;
+}
+
+.swiper-pagination-bullet {
+    background-color: #060708;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #eda405;
+}
+
+/* Muscle List Section */
+
+#muscle-list {
+    position: relative;
+}
+
+#muscle-list .muscle-content {
+    flex-direction: column;
+}
+
+.muscle-title {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.m-list-title h2 {
+    color: #eda405;
+    font-size: 2.5vw;
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#muscle-list .muscle-content .muscle-row {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+#muscle-list .muscle-content .diet-title #chest1,
+#back1 .muscle-row:nth-child(odd) .a {
+    order: 2;
+}
+
+#muscle-list .muscle-content .diet-title #shoulder1,
+#arms1 .muscle-row:nth-child(odd) .a {
+    order: 2;
+}
+
+#muscle-list .muscle-content .diet-title {
+    padding-top: 50px;
+}
+
+#muscle-list .muscle-content .muscle-row .muscle-cols {
+    position: relative;
+    width: 600px;
+    padding: 20px 50px;
+}
+
+#muscle-list .muscle-content .muscle-row .muscle-cols .muscle-heading {
+    font-size: 2em;
+    color: #eda405;
+}
+
+#muscle-list .muscle-content .muscle-row .muscle-cols p {
+    color: #fff;
+}
+
+#muscle-list .muscle-content .muscle-row .muscle-cols h1 {
+    color: #eda405;
+    padding-top: 50px;
+}
+
+#muscle-list .muscle-content .muscle-row .muscle-cols .box {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #eda405;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+#muscle-list .muscle-content .muscle-row .muscle-cols .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#muscle .muscle-bg, #muscle .muscle-bg img {
+    height: 100vh;
+    opacity: .5;
+    width: 100%;
+    position: absolute;
+}
+
+/* DIVIDER */
+.custom-shape-divider-top-1697888051 {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1697888051 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1697888051 .shape-fill {
+    fill: #eda405;
+    opacity: .5;
+}
+
+.custom-shape-divider-bottom-1697888979 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1697888979 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1697888979 .shape-fill {
+    fill: #eda405;
+    opacity: .5;
+}
+
+.custom-shape-divider-top-1697889050 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1697889050 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1697889050 .shape-fill {
+    fill: #eda405;
+    opacity: .5;
+}
+
