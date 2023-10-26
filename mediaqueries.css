@@ -1,0 +1,17 @@
+@media (max-width: 414px) {
+    .slide-container .muscle-text {
+        font-size: 20px;
+    }
+    #muscle-list .muscle-content .muscle-row {
+            flex-direction: column;
+        }
+    
+    #muscle-list .muscle-content .muscle-row .muscle-cols {
+        width: 100%;
+    }
+    
+    .m-list-title h2 {
+        font-size: 25px;
+        padding-top: 120px;
+    }
+}
